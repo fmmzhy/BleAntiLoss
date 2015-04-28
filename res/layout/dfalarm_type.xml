@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical" >
+    
+    <RelativeLayout style="@style/df_title">
+	        <Button android:id="@+id/btnBack" 
+	            android:text="@string/strToSetting" 
+	            style="@style/df_title_left_button" />
+	        <TextView android:id="@+id/titleText" 
+	            android:background="@null" 
+	            android:text="@string/fsAlarmType" 
+	            android:visibility="visible" 
+	            style="@style/df_title_text" />
+	        <Button android:visibility="visible"
+	            android:id="@+id/btnOK"
+	            android:text="@string/strOK" 
+	            style="@style/df_title_right_button" />
+    </RelativeLayout>
+    
+    <!-- Ring -->
+    <LinearLayout style="@style/fcDivider" />
+	<LinearLayout android:id="@+id/dfalarm_type_item_ring"
+	    	android:layout_height="wrap_content"
+	    	android:layout_width="match_parent"	        
+	    	android:paddingLeft="9dp"
+	        android:paddingTop="6dp"
+	        android:paddingRight="9dp"
+	        android:paddingBottom="6dp">
+    <TextView android:text="@string/alarm_type_ring" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20sp"/>
+	</LinearLayout>
+	<LinearLayout style="@style/fsContentDivider" />
+	    <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="9dp"
+	        android:paddingTop="6dp"
+	        android:paddingRight="9dp"
+	        android:paddingBottom="6dp"
+	        android:orientation="vertical">
+
+		    <LinearLayout android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal">
+	    	    	<TextView android:layout_width="match_parent"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_weight="1"
+		    	    android:textSize="18sp"
+		    	    android:layout_gravity="center"
+		    	    android:text="ring type :"/>
+					<Spinner android:id="@+id/dfalarm_type_ringtype"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    style="@android:attr/spinnersShown"
+					    android:entries="@array/ringtype"/>
+		     </LinearLayout>	
+
+		    
+		    <LinearLayout android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal">
+	    	    	<TextView android:layout_width="match_parent"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_weight="1"
+		    	    android:textSize="18sp"
+		    	    android:layout_gravity="center"
+		    	    android:text="ring time :"/>
+					<Spinner android:id="@+id/dfalarm_type_ringtime"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:gravity="center"
+					    style="@android:attr/spinnerStyle"
+					    android:entries="@array/ringtime"/>
+		     </LinearLayout>
+		     
+		    			       
+<!-- 	       	<Button android:id="@+id/dfalarmtype_stopbutton"
+		        style="@style/button_roundrect"
+		        android:layout_width="wrap_content"
+		        android:text="stop"/> -->
+		    <Button android:id="@+id/dfalarmtype_playbutton"
+		        style="@style/button_roundrect"
+		        android:layout_width="wrap_content"
+		        android:textSize="18sp"
+		        android:text="audition"/>
+
+	    </LinearLayout>
+	    
+<!-- 	    Shake -->
+	<LinearLayout style="@style/fcDivider" />    
+	<LinearLayout android:id="@+id/dfalarm_type_item_vibrate"
+	    	android:layout_height="wrap_content"
+	    	android:layout_width="match_parent"	        
+	    	android:paddingLeft="9dp"
+	        android:paddingTop="6dp"
+	        android:paddingRight="9dp"
+	        android:paddingBottom="6dp">
+    <TextView android:text="@string/alarm_type_vibrate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20sp"/>
+	</LinearLayout>
+	<LinearLayout style="@style/fsContentDivider" />
+		    <RelativeLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="9dp"
+	        android:paddingTop="6dp"
+	        android:paddingRight="9dp"
+	        android:paddingBottom="6dp"
+	        android:orientation="horizontal">
+    			
+		    <LinearLayout android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal">
+	    	    	<TextView android:layout_width="match_parent"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_weight="1"
+		    	    android:textSize="18sp"
+		    	    android:layout_gravity="center"
+		    	    android:text="shake :"/>
+					<Spinner android:id="@+id/dfalarm_type_shaketime"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:entries="@array/shaketime"/>
+		     </LinearLayout>	    	   
+    		</RelativeLayout>
+	
+</LinearLayout>

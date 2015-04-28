@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src/com/android/jackapp/btantiloss/DeviceFragment.java" />
+        <ignore path="src/com/android/jackapp/btantiloss/FindFragment.java" />
+        <ignore path="src/com/android/jackapp/btantiloss/bluetooth/BluetoothBackgroundSearchService.java" />
+        <ignore path="src/com/android/jackapp/btantiloss/bluetooth/ble/BLESearchDevices.java" />
+    </issue>
+</lint>

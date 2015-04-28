@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alarmtype">
+        <item >@string/alarm_type_ring</item>
+        <item >@string/alarm_type_vibrate</item>
+        <item >@string/alarm_type_ring_vibrate</item>
+        <item >@string/alarm_type_mute</item>
+    </string-array>
+    
+    <string-array name="shaketime">
+        <item >disable</item>
+        <item >5000</item>
+        <item >10000</item>
+        <item >30000</item>
+    </string-array>
+    
+    
+    <string-array name="ringtype">
+        <item >alarm.ogg</item>
+        <item >warn.wav</item>
+        <item >warn2.wav</item>
+        <item >chime.ogg</item>
+    </string-array>
+    
+    <string-array name="ringtime">
+        <item >5</item>
+        <item >10</item>
+        <item >30</item>
+        <item >60</item>
+    </string-array>    
+    
+    <string-array name="alarmdistance">
+        <item >@string/setting_close</item>
+        <item >@string/setting_middle</item>
+        <item >@string/setting_far</item>
+    </string-array>
+</resources>

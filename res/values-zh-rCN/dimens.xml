@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_bar_wight">45.0dip</dimen>
+    <dimen name="title_bar_right">12.0dip</dimen>
+    <dimen name="text_far">0.0dip</dimen>
+    <dimen name="text_milld">10.0dip</dimen>
+    <dimen name="text_close">10.0dip</dimen>
+    <dimen name="text_far_left">10.0dip</dimen>
+    <dimen name="LineLayout_text">10.0dip</dimen>
+    <dimen name="left_far">40.0dip</dimen>
+    <dimen name="left_mild">35.0dip</dimen>
+    <dimen name="left_close">15.0dip</dimen>
+    <dimen name="serch_stop_text">21.0sp</dimen>
+</resources>

@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+        <dimen name="tabPaddingTB">5.0dip</dimen>
+            <dimen name="tabImageSize">32.0dip</dimen>
+                <dimen name="tabTextSize">12sp</dimen>
+                
+                
+                
+           <!--      third app -->
+               <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="title_bar_wight">45.0dip</dimen>
+    <dimen name="title_bar_right">12.0dip</dimen>
+    <dimen name="device_title_hight">40.0dip</dimen>
+    <dimen name="text_far">0.0dip</dimen>
+    <dimen name="text_milld">30.0dip</dimen>
+    <dimen name="text_close">30.0dip</dimen>
+    <dimen name="text_far_left">10.0dip</dimen>
+    <dimen name="LineLayout_text">10.0dip</dimen>
+    <dimen name="left_far">10.0dip</dimen>
+    <dimen name="left_mild">5.0dip</dimen>
+    <dimen name="left_close">0.0dip</dimen>
+    <dimen name="serch_stop_text">16.0sp</dimen>
+</resources>

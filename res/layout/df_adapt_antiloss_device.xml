@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical" >
+    
+    <RelativeLayout style="@style/df_title">
+	        <Button android:id="@+id/btnBack" 
+	            android:text="@string/strBack" 
+	            style="@style/df_title_left_button" />
+	        <TextView android:id="@+id/titleText" 
+	            android:background="@null" 
+	            android:text="" 
+	            android:visibility="invisible" 
+	            style="@style/df_title_text" />
+	        <Button android:visibility="invisible"
+	            android:id="@+id/btnOK"
+	            android:text="@string/strOK" 
+	            style="@style/df_title_right_button" />
+    </RelativeLayout>
+
+    
+<!--     适配主体 -->
+<!-- ble 和classic bluetooth -->
+		<CheckBox android:id="@+id/adapt_antiloss_device_checkbox"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:checked="true"
+		    android:enabled="true"
+		    android:text="@string/bluetooth_type"/>
+		
+	    <TextView android:textSize="16sp" 
+	        android:gravity="center" 
+	        android:layout_width="match_parent" 
+	        android:layout_height="wrap_content" 
+	        android:text="@string/str_adapt_devices" />
+	    
+	    <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	    <Button style="@style/button_roundrect"
+	        android:id="@+id/adapt_antiloss_device_buttonx"
+	        android:layout_marginTop="5dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/start_adapt"
+	        android:textSize="20sp"/>
+
+	    <ProgressBar
+	        android:id="@+id/search_progressbar"
+	        style="?android:attr/progressBarStyle"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:visibility="invisible"
+	        android:gravity="center_horizontal" />
+	        
+	    </LinearLayout>
+	    <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="10dp"
+	        android:background="@color/custom_color">
+	        
+        	<ListView android:gravity="center" 
+		     android:id="@+id/adapt_devices_listview" 
+		     android:paddingLeft="5.0dip" 
+		     android:paddingRight="5.0dip" 
+		     android:layout_width="match_parent" 
+		     android:layout_height="wrap_content" /> 
+	     </LinearLayout>
+</LinearLayout>

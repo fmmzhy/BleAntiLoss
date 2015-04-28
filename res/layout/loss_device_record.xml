@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/all_background"
+    android:orientation="vertical" >
+    
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_title_background"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/loss_details"/>
+
+	<ListView android:layout_width="match_parent"
+	    android:id="@+id/loss_record_listview"
+	    android:layout_height="120dp">
+	    
+	</ListView>
+	
+	<Button 
+	    android:id="@+id/loss_device_record_cancel_button"
+	    style="@style/button_roundrect"
+	    android:textSize="20sp"
+	    android:layout_height="40dp"
+	    android:layout_width="match_parent"
+	    android:layout_gravity="center_horizontal"
+	    android:text="@string/cancle"/>
+	
+</LinearLayout>

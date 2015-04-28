@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    <RelativeLayout 
+        style="@style/df_title">
+        <Button android:id="@+id/btnBack" 
+            android:text="@string/strToSetting" 
+            style="@style/df_title_left_button" />
+        <Button 
+            android:background="@null" 
+            android:text="@string/fsAbout" 
+            style="@style/df_title_text" />
+        <Button android:visibility="invisible" 
+            android:text="" 
+            style="@style/df_title_right_button" />
+    </RelativeLayout>
+    
+    <LinearLayout android:orientation="vertical" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+  
+            <ImageView android:background="@null"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_version_20150112"
+                android:layout_gravity="center"/>
+
+            <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+        
+	            <TextView
+	                android:layout_marginTop="30dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="更新说明:"
+	                android:layout_gravity="left"/>
+	            
+	            <TextView android:layout_marginTop="5dp"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="@string/app_update_introdution_20150112"/>
+
+            </LinearLayout>
+            </ScrollView>
+    </LinearLayout>
+</LinearLayout>

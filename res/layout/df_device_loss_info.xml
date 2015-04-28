@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+     android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/grey"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    <RelativeLayout 
+        style="@style/df_title">
+        <Button android:id="@+id/btnBack" 
+            android:text="@string/strToSetting" 
+            style="@style/df_title_left_button" />
+        <Button 
+            android:background="@null" 
+            android:text="@string/fsdeviceLossInfo" 
+            style="@style/df_title_text" />
+        <Button android:visibility="invisible" 
+            android:text="" 
+            style="@style/df_title_right_button" />
+    </RelativeLayout>
+  
+	<RelativeLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:orientation="horizontal">
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/dfdevice_loss_time"
+	        android:text="@string/dfdevice_loss_time"
+	        android:textSize="18sp"/>
+   	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/dfdevice_loss_time_text"
+	        android:layout_marginLeft="5dp"
+	        android:layout_toRightOf="@+id/dfdevice_loss_time"
+	        android:text="xxxxxxx"
+	        android:textSize="16sp"/>
+	</RelativeLayout>
+	
+		    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    	android:layout_marginTop="18dp"       
+	        android:text="@string/df_device_loss_location"
+	        android:textSize="20sp"/>
+		    
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+</LinearLayout>

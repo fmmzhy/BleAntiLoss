@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@+id/main" android:background="@drawable/all_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/main_tabwidget" android:background="@drawable/radio_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RadioButton android:id="@+id/radio_device" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="true" android:text="@string/home_rb" android:drawableTop="@drawable/main_device_selector" android:layout_weight="1.0" style="@style/home_radio_btn_style" />
+        <RadioButton android:id="@+id/radio_single" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/plan_rb" android:drawableTop="@drawable/main_single_selector" android:layout_weight="1.0" style="@style/home_radio_btn_style" />
+        <RadioButton android:id="@+id/radio_setting" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/setting_rb" android:drawableTop="@drawable/main_setting_selector" android:layout_weight="1.0" style="@style/home_radio_btn_style" />
+        <RadioButton android:id="@+id/radio_help" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/help_rb" android:drawableTop="@drawable/main_help_selector" android:layout_weight="1.0" style="@style/home_radio_btn_style" />
+    </RadioGroup>
+    <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@+id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@+id/main_tabwidget" />
+</RelativeLayout>
+  

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/entertainment_equipment_scanning_mode_01" />
+    <item android:duration="100" android:drawable="@drawable/entertainment_equipment_scanning_mode_02" />
+    <item android:duration="100" android:drawable="@drawable/entertainment_equipment_scanning_mode_03" />
+    <item android:duration="100" android:drawable="@drawable/entertainment_equipment_scanning_mode_04" />
+    <item android:duration="100" android:drawable="@drawable/entertainment_equipment_scanning_mode_05" />
+    <item android:duration="100" android:drawable="@drawable/entertainment_equipment_scanning_mode_06" />
+    <item android:duration="100" android:drawable="@drawable/entertainment_equipment_scanning_mode_07" />
+    <item android:duration="100" android:drawable="@drawable/entertainment_equipment_scanning_mode_08" />
+</animation-list>

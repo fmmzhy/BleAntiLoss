@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="com_facebook_picker_search_bar_background">#fff5f5f7</color>
+    <color name="com_facebook_picker_search_bar_text">#ffbcbdc2</color>
+    <color name="com_facebook_blue">#ff3b5998</color>
+    <color name="com_facebook_usersettingsfragment_connected_text_color">#ffffffff</color>
+    <color name="com_facebook_usersettingsfragment_connected_shadow_color">#ff000000</color>
+    <color name="com_facebook_usersettingsfragment_not_connected_text_color">#ffa6aed7</color>
+    <color name="com_facebook_loginview_text_color">#ffffffff</color>
+    <color name="red">#ffff0000</color>
+    <color name="orange">#ffff7538</color>
+    <color name="yellow">#ffffff00</color>
+    <color name="green">#ff00ff00</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="purple">#ffa020f0</color>
+    <color name="pink">#ffffc0cb</color>
+    <color name="brown">#ff964b00</color>
+    <color name="dodgerblue">#ff1e90ff</color>
+    <color name="mayablue">#ff73c2fb</color>
+    <color name="greyblue">#ff8c92ac</color>
+    <color name="grey1">#ff111111</color>
+    <color name="grey2">#ff222222</color>
+    <color name="grey3">#ff333333</color>
+    <color name="grey4">#ff444444</color>
+    <color name="grey5">#ff555555</color>
+    <color name="grey6">#ff666666</color>
+    <color name="grey7">#ff777777</color>
+    <color name="grey8">#ff888888</color>
+    <color name="grey9">#ff999999</color>
+    <color name="greyA">#ffaaaaaa</color>
+    <color name="greyB">#ffbbbbbb</color>
+    <color name="greyC">#ffcccccc</color>
+    <color name="greyD">#ffdddddd</color>
+    <color name="greyE">#ffeeeeee</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="grey">@color/grey8</color>
+    <color name="darkgrey">@color/grey5</color>
+    <color name="lightgrey">@color/greyC</color>
+    <color name="mintcream">#fff5fffa</color>
+    <color name="BarColorGoal">#ffa8c545</color>
+    <color name="BarColorHigh">#ffdfd3b6</color>
+    <color name="BarColorLow">#ff77603c</color>
+    <color name="BarColorDeep">#ff604277</color>
+    <color name="BarColorLight">#ff8ad0c8</color>
+    <color name="BarColorAwake">#fff2dc86</color>
+    <color name="BarColorBad">#fff19181</color>
+    <color name="BarColorAverage">#ffe9cb8f</color>
+    <color name="BarColorGood">#ffc2e078</color>
+    <color name="RadioNormalTop">#ffc9c9c9</color>
+    <color name="RadioNormalCenter">#ff999999</color>
+    <color name="RadioNormalBottom">#ff838383</color>
+    <color name="RadioCheckedTop">#ff1d5910</color>
+    <color name="RadioCheckedCenter">#ff4d8f1c</color>
+    <color name="RadioCheckedBottom">#ff5da120</color>
+    <color name="RadioBorder">@color/grey</color>
+    <color name="translucent_grey">#cc333333</color>
+    
+    
+    <color name="custom_color">#77444444</color>
+    
+    <color name="custom_title_background">#FF336699</color>
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <string name="app_name">BtAntiLoss</string> -->
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="device_disconnect">Disconnect</string>
+    <string name="device_connected">Connected</string>
+    <string name="device_unknown">Unknown</string>
+    <string name="anti_loss_setting">Adapt</string>
+    <string name="strBack">Back</string>
+    <string name="strOK">OK</string>
+    
+    <string name="bluetooth_type">classic_bluetooth | bluetooth LE</string>
+    <string name="str_adapt_devices">\nif you want to monitor a device,please do "adapt-operations" first ! \n</string>
+    <string name="start_adapt">Adapt</string>
+    <string name="antiloss_settings">Anti Loss Setting</string>
+    <string name="fsFunction_switch">Switch</string>
+    <string name="fsAntiLossInfo">Device Information</string>
+    <string name="fsAntiLossDistance">Alarm Distance</string>
+    <string name="fsAlarmType">Alarm Type</string>
+    <string name="antiloss_home">Home</string>
+    <string name="fsAbout">About</string>
+    <string name="strToHome">Home</string>
+    <string name="strToSetting">Setting</string>
+    
+    <string name="fsdeviceLossInfo">Loss Information</string>
+    <string name="dfdevice_loss_time">Loss Time :</string>
+    <string name="df_device_loss_location">Loss Loctation :</string>
+    
+    
+    <string name="strfsDevInfo_name">Name : </string>
+    <string name="strfsDevInfo_mac">Address : </string>
+   	<string name="default_antiloss_distance">normal</string>
+   	<string name="antiloss_distance_near">near</string>
+   	<string name="antiloss_distance_far">far</string>
+	
+    <string name="fsSetAlarmDistance">Set Alarm Distance</string>
+    
+    
+    <string name="alarm_type_vibrate">shake</string>
+    <string name="alarm_type_ring">ring</string>
+    <string name="alarm_type_ring_vibrate">ring+vibrate</string>
+    <string name="alarm_type_mute">mute</string>
+<!--     默认数据 -->
+
+    <string name="str_alarm_distance">\nSet alarm distance!\n</string>
+    
+    <string name="app_version_20150112">20150120</string>
+    <string name="app_update_introdution_20150112">\n Basic UI ! \n</string>
+    
+    
+<!--     <string name="app_version_20150113">JackChan | 20150113</string>
+    <string name="app_update_introdution_20150113">\n Improve App Setting  ! \n</string> -->
+    
+    
+    <string name="alarmtype_info">Alarm Information</string>
+    <string name="alarmtype_okinfo">Alarm type :</string>
+    
+    <string name="bt_error_msg">Bluetooth not open or  not support </string>
+    
+    <string name="dfadapt_device_dlg_title">Anti Loss Device</string>
+    
+    <string name="dlg_btOK">OK</string>
+    <string name="dlg_btCancel">Cancel</string>
+    
+    
+    
+    <string name="background_device_disconnect">Device Disconnect !</string>
+    
+    <string name="fsdevinfo_introduction">\nBonded device information\n</string>
+    
+    <string name="switch_on_warn_info">You will start Service information:</string>
+    
+    <string name="first_adapt_device">Please choose a device firstly !</string>
+    
+    <string name="first_stop_service">Please stop background bluetooth service firstly !</string>
+    
+    
+    <!-- tabhost -->
+        <string name="strTabHome">Home</string>
+    <string name="strTabActivity">Activity</string>
+    <string name="strTabSleep">Sleep</string>
+    <string name="strTabSetting">Setting</string>
+    
+    
+ <!--    third app -->
+ 
+     <string name="app_name">BLE Film</string>
+    <string name="home_rb">Device</string>
+    <string name="plan_rb">Find</string>
+    <string name="setting_rb">Setting</string>
+    <string name="help_rb">Help</string>
+    <string name="home_title01">My BLE</string>
+    <string name="home_title02">Signal strength</string>
+    <string name="home_title03">BLE Setting</string>
+    <string name="home_title04">OI</string>
+    <string name="setting_textName">Device Name</string>
+    <string name="setting_ring">Ring Setting</string>
+    <string name="setting_sound">Alarm sound</string>
+    <string name="setting_alert">Alarm</string>
+    <string name="setting_warn">Warn</string>
+    <string name="setting_police">Alarm Ring</string>
+    <string name="setting_air">Chime Ring</string>
+    <string name="setting_distance">Warn Distance</string>
+    <string name="setting_close">Close</string>
+    <string name="setting_middle">Middle</string>
+    <string name="setting_far">Far</string>
+    <string name="setting_time">Push single</string>
+    <string name="setting_check">Check Update</string>
+    <string name="setting_version">Version</string>
+    <string name="signal_name">Device Name</string>
+    <string name="warnning">Warnning !</string>
+    <string name="sdk_version">Your system version is too low this application support Android 4.3 system</string>
+    <string name="ble_support">This device does not support BLE</string>
+    <string name="exit">Again according to exit the program</string>
+    <string name="connect_first">Please connect and choose the device to change its state</string>
+    <string name="save">Save</string>
+    <string name="cancle">Cancle</string>
+    <string name="set_title">Modify the device name</string>
+    <string name="check_version">Check the update</string>
+    <string name="check_message">Have the latest version!</string>
+    <string name="commit">OK</string>
+    <string name="serch_start">Start Serch</string>
+    <string name="serch_stop">Stop Serch</string>
+    <string name="device_name">Device Name</string>
+    <string name="device_time">Equipment within the prescribed period of time not connected, please connect again.</string>
+    <string name="device_close">Not found near equipment, please open the equipment!</string>
+    <string name="device_connect_one">Your %1$s is connected!!!</string>
+    <string name="device_disconnect_one">yours 1$s is disconnected！！！</string>
+    <string name="device_lost_one">Your %1$s is lost！！！</string>
+    <string name="device_search_one">%1$s is searching for you mobilephone ！！！</string>
+    <string name="device_distance">My BLE distance with you</string>
+    <string name="notiforcation">Touch to learn more or stop the application</string>
+    <string name="device_version">20150409 V0.1</string>
+    <string name="setting_about_info2">深圳市森名科技\nTel : +8618676661156\nQQ：274035403</string>
+    <string name="setting_about_info">深圳市森名科技</string>
+    <string name="setting_about">About</string>
+    
+    <string name="setting_shake">Shake Setting</string>
+    <string name="alarm_time">Alarm Time</string>
+    <string name="time_unit">(Unit:S)</string>
+    <string name="device_info">Device Information</string>
+    <string name="device_name_myble">My Device</string>
+    
+    <string name="antiloss_service_notrunnig">AntiLoss Service is not Runnig,please turn on device search switch!</string>
+    <string name="location_deviceloss_time_value">NO</string>
+    <string name="location_deviceloss_time">Device Loss Time</string>
+    
+    <string name="longitude">Longitude</string>
+	<string name="latitude">Latitude</string>
+	<string name="gotolocation">Location</string>
+	
+	<string name="bonding">Bonding</string>
+	
+	
+	<string name="device_not_ble">BLE is not supported on this device !</string>
+	<string name="string_weidu">Latitude</string>
+	
+	
+	<string name="view_lost_location_string">View lost location</string>
+	
+	<string name="if_exit_string">Are you sure to exit?</string>
+	<string name="bg_running">Background running</string>
+	<string name="exit_string">Exit</string>
+	
+	<string name="no_set_device">It has not anti-loss device !</string>
+	
+	<string name="get_it_string">Get it</string>
+	
+	<string name="record_detail">Details</string>
+	<string name="loss_details">Loss details</string>
+	<string name="no_network">No network !</string>
+	<string name="loss_record_str">Loss record</string>
+</resources>

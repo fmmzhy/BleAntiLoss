@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical" >
+    
+	<LinearLayout android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:background="@color/black"
+	    android:layout_height="wrap_content">
+	    <TextView android:layout_width="match_parent"
+	        android:gravity="center"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:text="@string/switch_on_warn_info"/>
+	</LinearLayout>
+	
+	<LinearLayout android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+	    <TextView android:layout_width="match_parent"
+	        android:gravity="left"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:textColor="@color/black"
+	        android:text="@string/strfsDevInfo_name"/>
+	    
+   	    <TextView android:layout_width="match_parent"
+   	        android:layout_weight="1"
+   	        android:id="@+id/switchon_name"
+   	        android:textColor="@color/black"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"/>
+	</LinearLayout>
+	
+	<LinearLayout android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    <TextView android:layout_width="match_parent"
+	        android:gravity="left"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:layout_weight="1"
+	        android:textColor="@color/black"
+	        android:text="@string/fsAntiLossDistance"/>
+	    
+   	    <TextView android:layout_width="match_parent"
+   	        android:id="@+id/switchon_distance"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/black"
+	        android:layout_weight="1"
+	        android:textSize="16sp"/>
+	</LinearLayout>
+	
+		<LinearLayout android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    <TextView android:layout_width="match_parent"
+	        android:gravity="left"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:layout_weight="1"
+	        android:textColor="@color/black"
+	        android:text="@string/fsAlarmType"/>
+	    
+   	    <TextView android:layout_width="match_parent"
+   	        android:id="@+id/switchon_alarmtype"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/black"
+	        android:layout_weight="1"
+	        android:textSize="16sp"/>
+	</LinearLayout>
+	
+		<LinearLayout android:orientation="horizontal"
+	    android:layout_marginTop="20dp"
+	    android:gravity="center"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+		<Button 
+	    android:id="@+id/switch_dialog_btOK"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:text="@string/dlg_btOK"
+	    />
+	
+		<Button 
+	    android:id="@+id/switch_dialog_btCancel"
+	    android:layout_marginLeft="50dp"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:text="@string/dlg_btCancel"
+	    />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/df_title" >
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/df_title_left_button"
+            android:text="@string/strToHome"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/titleText"
+            style="@style/df_title_text"
+            android:background="@null"
+            android:text="@string/home_title03" />
+
+        <Button
+            android:id="@+id/btnOK"
+            style="@style/df_title_right_button"
+            android:text="@string/strOK"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/setting_name_background"
+                style="@style/page_title_style" >
+
+                <TextView
+                    android:id="@+id/setting_device_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/setting_textName"
+                    android:textColor="#ffffffff"
+                    android:textSize="18.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seting_first"
+                style="@style/setting_item_style"
+                android:layout_below="@id/setting_name_background" >
+
+                <ImageView
+                    android:id="@+id/ring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:src="@drawable/ic_ring" />
+
+                <ImageView
+                    android:id="@+id/split_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ring"
+                    android:layout_marginTop="20.0dip"
+                    android:background="@drawable/ic_setting_split" />
+
+                <TextView
+                    android:id="@+id/text_ring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_toRightOf="@+id/ring"
+                    android:text="@string/setting_ring"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0dip" />
+
+                <TextView
+                    android:id="@+id/ring_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:text="@string/setting_sound"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0dip" />
+
+                <CheckBox
+                    android:id="@+id/audio_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/text_ring"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/checkbox_choose" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seting_second"
+                style="@style/setting_item_style"
+                android:layout_below="@id/seting_first" >
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/voice_1"
+                        style="@style/seeting_radiobutton_style1"
+                        android:text="@string/setting_alert" />
+
+                    <ImageView
+                        android:id="@+id/black_1"
+                        style="@style/setting_item_blackline_style" />
+
+                    <RadioButton
+                        android:id="@+id/voice_2"
+                        style="@style/seeting_radiobutton_style1"
+                        android:text="@string/setting_warn" />
+
+                    <ImageView
+                        android:id="@+id/black_2"
+                        style="@style/setting_item_blackline_style" />
+
+                    <RadioButton
+                        android:id="@+id/voice_3"
+                        style="@style/seeting_radiobutton_style1"
+                        android:text="@string/setting_police" />
+
+                    <ImageView
+                        android:id="@+id/black_3"
+                        style="@style/setting_item_blackline_style" />
+
+                    <RadioButton
+                        android:id="@+id/voice_4"
+                        style="@style/seeting_radiobutton_style1"
+                        android:text="@string/setting_air" />
+
+                    <ImageView
+                        android:id="@+id/black_4"
+                        style="@style/setting_item_blackline_style" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seting_shake"
+                style="@style/setting_item_style"
+                android:layout_below="@id/seting_second" >
+
+                <ImageView
+                    android:id="@+id/shake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:src="@drawable/ic_shake" />
+
+                <ImageView
+                    android:id="@+id/split_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shake"
+                    android:layout_marginTop="20.0dip"
+                    android:background="@drawable/ic_setting_split" />
+
+                <TextView
+                    android:id="@+id/text_shake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_toRightOf="@+id/shake"
+                    android:text="@string/setting_shake"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0dip" />
+
+                <CheckBox
+                    android:id="@+id/shake_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/text_shake"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/checkbox_choose" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seting_alarmtime"
+                style="@style/setting_item_style"
+                android:layout_below="@id/seting_shake" >
+
+                <TextView
+                    android:id="@+id/text_alarmtime"
+                    style="@style/setting_text_style1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/alarm_time" />
+
+                <ImageView
+                    android:id="@+id/black_5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dfalarm_type_ringtime"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/ic_setting_black" />
+
+                <Spinner
+                    android:id="@+id/dfalarm_type_ringtime"
+                    style="@android:attr/spinnerStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:background="@android:color/transparent"
+                    android:entries="@array/ringtime"
+                    android:gravity="center"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    style="@style/setting_text_style2"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/dfalarm_type_ringtime"
+                    android:text="@string/time_unit" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seting_distance"
+                style="@style/setting_item_style"
+                android:layout_below="@+id/seting_alarmtime" >
+
+                <TextView
+                    android:id="@+id/ring_name_05"
+                    style="@style/setting_text_style1"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/setting_distance" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="0dip"
+                    android:layout_marginTop="0.0dip"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/distance_radio1"
+                        style="@style/seeting_radiobutton_style2"
+                        android:text="@string/setting_close" />
+
+                    <RadioButton
+                        android:id="@+id/distance_radio2"
+                        style="@style/seeting_radiobutton_style2"
+                        android:text="@string/setting_middle" />
+
+                    <RadioButton
+                        android:id="@+id/distance_radio3"
+                        style="@style/seeting_radiobutton_style2"
+                        android:text="@string/setting_far" />
+                </RadioGroup>
+
+                <ImageView
+                    style="@style/setting_item_blackline_style"
+                    android:layout_below="@+id/radiogroup2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seting_devinfo"
+                style="@style/setting_item_style"
+                android:layout_below="@id/seting_distance" >
+
+                <TextView
+                    android:id="@+id/seting_devinfo_label"
+                    style="@style/setting_text_style1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/device_info" />
+
+                <LinearLayout
+                    android:id="@+id/devinfo_linearlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/setting_device_info1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/setting_devinfo_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/device_unknown"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/setting_devinfo_mac1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/device_unknown"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/setting_device_info2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/setting_devinfo_name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/device_unknown"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/setting_devinfo_mac2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/device_unknown"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/setting_device_info3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/setting_devinfo_name3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/device_unknown"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/setting_devinfo_mac3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/device_unknown"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seting_devinfo"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/ic_setting_black" />
+            <!-- about -->
+
+            <RelativeLayout
+                android:id="@+id/seting_about"
+                style="@style/setting_item_style"
+                android:layout_below="@+id/seting_devinfo" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/setting_about"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/setting_about_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:text="@string/setting_about_info2"
+                    android:textColor="#ffffffff"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setting_about_id"
+                    android:layout_marginTop="25.0dip"
+                    android:background="@drawable/ic_setting_black" />
+            </RelativeLayout>
+
+            <!-- version -->
+
+            <RelativeLayout
+                android:id="@+id/seting_version"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/seting_about"
+                android:layout_marginBottom="15.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="25.0dip" >
+
+                <LinearLayout
+                    android:id="@+id/setting_version_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/version_image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:text="@string/setting_version"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0dip" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:text="@string/device_version"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

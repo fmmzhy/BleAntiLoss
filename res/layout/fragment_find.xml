@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/single_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+      <RelativeLayout android:id="@+id/title_id" style="@style/df_title">
+	        <Button android:id="@+id/btnBack" 
+	            android:visibility="invisible"
+	            android:text="@string/strToHome"
+	            style="@style/df_title_left_button" />
+	        <TextView android:id="@+id/titleText" 
+	            android:background="@null" 
+	            android:text="@string/home_title02" 
+	            style="@style/df_title_text" />
+	        <Button android:visibility="invisible"
+	            android:id="@+id/btnOK"
+	            android:text="@string/strOK" 
+	            style="@style/df_title_right_button" />
+    </RelativeLayout>
+    
+    <RelativeLayout android:layout_below="@+id/title_id" android:id="@+id/device_background" style="@style/page_title_style">
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@+id/single_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\?" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+      
+    <RelativeLayout android:id="@+id/single_show" android:layout_width="fill_parent" android:layout_height="wrap_content"  android:layout_marginTop="60dp" android:layout_below="@+id/device_background">
+  <!--       <ImageView android:id="@+id/single_imageview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+ -->        
+ 		<Button android:textSize="@dimen/serch_stop_text" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="right|center" android:id="@+id/serch_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_below="@+id/view_lost_location_id" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@+id/local_imageView" android:clickable="true" android:layout_width="45.0dip" android:layout_height="45.0dip"  android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" android:src="@drawable/local" android:scaleType="matrix" android:layout_centerHorizontal="true" android:layout_alignParentTop="true" />
+		<TextView android:id="@+id/view_lost_location_id" android:layout_marginTop="8dp" android:textSize="14sp" android:textColor="#ffffffff" android:text="@string/view_lost_location_string" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_below="@+id/local_imageView"/>
+	</RelativeLayout>
+    
+<!--     <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10dp" android:layout_marginTop="25.0dip">
+        <TextView android:textColor="#ffffffff" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:id="@+id/textView_single" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_distance" />
+        <ProgressBar android:id="@+id/setting_sig_show" android:layout_below="@+id/textView_single" android:layout_centerVertical="true" android:layout_width="200.0dip" android:layout_height="wrap_content"  android:max="100" android:progress="50" style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout> -->
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp">
+                <TextView android:textColor="#ffffffff" 
+                    android:layout_alignParentLeft="true" 
+                    android:layout_centerVertical="true" 
+                    android:id="@+id/textView_single" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:text="@string/device_distance" />
+                <com.android.jackapp.btantiloss.customview.DistanceProgressBar 
+                    android:id="@+id/setting_sig_show" 
+                    android:layout_marginTop="5dp"
+                    android:layout_width="200.0dip" 
+                    android:layout_height="wrap_content"  
+                    android:max="100" 
+                    android:progress="50" 
+                    android:progressDrawable="@drawable/custom_distance_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+</LinearLayout>
+
+    
+   

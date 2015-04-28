@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout style="@style/df_title">
+	        <Button android:id="@+id/btnBack" 
+	            android:visibility="invisible"
+	            android:text="@string/strToHome"
+	            style="@style/df_title_left_button" />
+	        <TextView android:id="@+id/titleText" 
+	            android:background="@null" 
+	            android:text="@string/home_title03" 
+	            style="@style/df_title_text" />
+	        <Button android:visibility="invisible"
+	            android:id="@+id/btnOK"
+	            android:text="@string/strOK" 
+	            style="@style/df_title_right_button" />
+    </RelativeLayout>
+
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+<!--             <RelativeLayout android:id="@+id/setting_name_background" style="@style/page_title_style">
+                <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@+id/setting_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_textName" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout> -->
+            <!--  android:layout_below="@id/setting_name_background" -->
+            <RelativeLayout android:id="@+id/seting_first" style="@style/setting_item_style">
+                <ImageView android:id="@+id/ring" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_ring" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@+id/split_image" android:background="@drawable/ic_setting_split" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@+id/ring" />
+                <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@+id/text_ring" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/setting_ring" android:layout_toRightOf="@+id/ring" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@+id/ring_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/setting_sound" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            	<CheckBox android:id="@+id/audio_checkbox" android:checked="true" android:button="@null" android:drawableLeft="@drawable/checkbox_choose" android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/text_ring"/>
+            </RelativeLayout>
+            
+            <RelativeLayout android:id="@+id/seting_second" android:layout_below="@id/seting_first" style="@style/setting_item_style">
+                <RadioGroup android:orientation="vertical" android:id="@+id/radiogroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                    <RadioButton style="@style/seeting_radiobutton_style1" android:id="@+id/voice_1" android:text="@string/setting_alert"/>
+                    <ImageView android:id="@+id/black_1" style="@style/setting_item_blackline_style"/>
+                    <RadioButton style="@style/seeting_radiobutton_style1" android:id="@+id/voice_2" android:text="@string/setting_warn"/>
+                    <ImageView android:id="@+id/black_2" style="@style/setting_item_blackline_style"/>
+                    <RadioButton style="@style/seeting_radiobutton_style1" android:id="@+id/voice_3" android:text="@string/setting_police"/>
+                    <ImageView  android:id="@+id/black_3" style="@style/setting_item_blackline_style"/>
+                    <RadioButton style="@style/seeting_radiobutton_style1" android:id="@+id/voice_4" android:text="@string/setting_air" />
+                    <ImageView android:id="@+id/black_4" style="@style/setting_item_blackline_style"/>
+                </RadioGroup>
+            </RelativeLayout>
+            
+            <RelativeLayout android:id="@+id/seting_shake" android:layout_below="@id/seting_second" style="@style/setting_item_style">
+                <ImageView android:id="@+id/shake" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_shake" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@+id/split_image" android:background="@drawable/ic_setting_split" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@+id/shake" />
+                <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@+id/text_shake" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/setting_shake" android:layout_toRightOf="@+id/shake" android:layout_centerVertical="true" />
+             	<CheckBox android:id="@+id/shake_checkbox" android:button="@null" android:drawableLeft="@drawable/checkbox_choose" android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/text_shake"/>
+            </RelativeLayout>
+            
+            <RelativeLayout android:id="@+id/seting_alarmtime" android:layout_below="@id/seting_shake" style="@style/setting_item_style">
+                <TextView android:id="@+id/text_alarmtime" style="@style/setting_text_style1" android:layout_alignParentLeft="true" android:text="@string/alarm_time" android:layout_marginLeft="10.0dip"/>
+             	<ImageView android:id="@+id/black_5" android:layout_below="@+id/dfalarm_type_ringtime" android:background="@drawable/ic_setting_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                <Spinner android:id="@+id/dfalarm_type_ringtime" android:entries="@array/ringtime" android:textColor="@color/white" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" style="@android:attr/spinnerStyle" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="10.0dip"/>
+            	<TextView style="@style/setting_text_style2" android:layout_toLeftOf="@+id/dfalarm_type_ringtime" android:layout_marginRight="5dp" android:text="@string/time_unit"/>
+            </RelativeLayout>
+            
+      
+            <RelativeLayout android:id="@+id/seting_distance" android:layout_below="@+id/seting_alarmtime" style="@style/setting_item_style">
+                <TextView style="@style/setting_text_style1" android:id="@+id/ring_name_05" android:layout_marginLeft="10.0dip" android:text="@string/setting_distance"/>
+                <RadioGroup android:orientation="horizontal" android:id="@+id/radiogroup2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginRight="0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <RadioButton android:id="@+id/distance_radio1" android:text="@string/setting_close" style="@style/seeting_radiobutton_style2"/>
+                    <RadioButton android:id="@+id/distance_radio2" android:text="@string/setting_middle" style="@style/seeting_radiobutton_style2"/>
+                    <RadioButton android:id="@+id/distance_radio3" android:text="@string/setting_far" style="@style/seeting_radiobutton_style2"/>
+                </RadioGroup>
+                <ImageView style="@style/setting_item_blackline_style" android:layout_below="@+id/radiogroup2" />
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/seting_devinfo" android:layout_below="@id/seting_distance" style="@style/setting_item_style">
+                <TextView android:id="@+id/seting_devinfo_label" style="@style/setting_text_style1" android:layout_alignParentLeft="true" android:text="@string/device_info" android:layout_marginLeft="10.0dip"/>
+            	<LinearLayout android:orientation="vertical"
+            	    android:layout_height="wrap_content"
+            	    android:layout_width="wrap_content"
+            	    android:id="@+id/devinfo_linearlayout"
+            	    android:layout_alignParentRight="true"
+            	    android:layout_centerVertical="true"
+            	    android:layout_marginRight="10dp">
+                    <LinearLayout android:id="@+id/setting_device_info1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+                   	    <TextView android:id="@+id/setting_devinfo_name1"
+	            	        android:layout_width="wrap_content"
+	            	        android:layout_height="wrap_content"
+	            	        android:textColor="@color/white"
+	            	        android:textSize="14sp"
+	            	        android:text="@string/device_unknown"/>
+	               	    <TextView android:id="@+id/setting_devinfo_mac1"
+	            	        android:layout_width="wrap_content"
+	            	        android:layout_height="wrap_content"
+	               	        android:textColor="@color/white"
+	            	        android:textSize="10sp"
+	            	        android:text="@string/device_unknown"/>  
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/setting_device_info2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                   	    <TextView android:id="@+id/setting_devinfo_name2"
+	            	        android:layout_width="wrap_content"
+	            	        android:layout_height="wrap_content"
+	            	        android:textColor="@color/white"
+	            	        android:textSize="14sp"
+	            	        android:text="@string/device_unknown"/>
+	               	    <TextView android:id="@+id/setting_devinfo_mac2"
+	            	        android:layout_width="wrap_content"
+	            	        android:layout_height="wrap_content"
+	               	        android:textColor="@color/white"
+	            	        android:textSize="10sp"
+	            	        android:text="@string/device_unknown"/>  
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/setting_device_info3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                   	    <TextView android:id="@+id/setting_devinfo_name3"
+	            	        android:layout_width="wrap_content"
+	            	        android:layout_height="wrap_content"
+	            	        android:textColor="@color/white"
+	            	        android:textSize="14sp"
+	            	        android:text="@string/device_unknown"/>
+	               	    <TextView android:id="@+id/setting_devinfo_mac3"
+	            	        android:layout_width="wrap_content"
+	            	        android:layout_height="wrap_content"
+	               	        android:textColor="@color/white"
+	            	        android:textSize="10sp"
+	            	        android:text="@string/device_unknown"/>  
+                    </LinearLayout>
+            	</LinearLayout>
+            </RelativeLayout>
+      		<ImageView android:layout_below="@+id/seting_devinfo" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:background="@drawable/ic_setting_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <!-- about -->
+       	 	<RelativeLayout android:id="@+id/seting_about" android:layout_below="@+id/seting_devinfo" style="@style/setting_item_style">
+                    <TextView android:textSize="16sp" android:layout_marginLeft="10dp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_about" android:layout_centerVertical="true"/>
+                    <TextView android:clickable="true" android:textSize="12sp" android:gravity="right" android:id="@+id/setting_about_id" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_about_info2" android:layout_centerVertical="true"/>
+              		<ImageView android:background="@drawable/ic_setting_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_below="@+id/setting_about_id" />
+                    
+        	</RelativeLayout>
+        	
+        <!--    version -->
+            <RelativeLayout android:id="@+id/seting_version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="25.0dip" android:layout_marginBottom="15.0dip" android:layout_marginRight="15.0dip" android:layout_below="@+id/seting_about" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+                <LinearLayout android:id="@+id/setting_version_id" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/version_image" />
+                    <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/setting_version" />
+                    <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/device_version" />
+                </LinearLayout>
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+    </ScrollView>
+</LinearLayout>

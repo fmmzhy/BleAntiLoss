@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout style="@style/df_title"
+               android:paddingTop="0.0dip"
+        		android:paddingBottom="0.0dip">
+	        <Button android:id="@+id/btnBack" 
+	            android:text="@string/strBack"
+	            android:visibility="invisible" 
+	            style="@style/df_title_left_button" />
+	        <TextView android:id="@+id/titleText" 
+	            android:background="@null" 
+	            android:text="@string/home_title01" 
+	            style="@style/df_title_text" />
+	        <ImageView 
+	            android:id="@+id/devicefrag_search"
+	            android:clickable="true"
+	            android:visibility="visible"
+	            android:layout_marginRight="40dp"
+	            android:src="@drawable/devicefragment_search" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    
+<!--     <RelativeLayout android:visibility="gone"  android:layout_below="@+id/title_id" android:id="@+id/device_background" android:background="@drawable/ic_devicename_background" android:layout_width="fill_parent" android:layout_height="@dimen/device_title_hight">
+        <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:id="@+id/single_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_unknown" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    	<TextView android:textSize="12.0dip" android:textColor="@color/black" android:id="@+id/single_device_name_myble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_name_myble" android:layout_marginRight="15dp" android:layout_toLeftOf="@+id/single_device_name" android:layout_centerVertical="true" />     
+    	<CheckBox android:id="@+id/device_switch" android:button="@drawable/device_checkbox_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="10dp"/>
+    </RelativeLayout> -->
+    <!-- 三个防丢设备  -->
+   	<RelativeLayout android:id="@+id/device1_layout" style="@style/antiloss_device_style">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#ff0000ff" android:id="@+id/device1_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="device 1" android:layout_alignParentLeft="true" android:layout_marginLeft="10dp" android:layout_centerVertical="true" />
+    	<CheckBox android:id="@+id/device1_switch" android:button="@drawable/device_checkbox_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="10dp"/>
+		<ImageView android:layout_toLeftOf="@+id/device1_switch" android:id="@+id/device1_del" style="@style/del_antiloss_device_style"/>
+    	
+<!--         <LinearLayout android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/grey" android:layout_below="@+id/device1_switch" android:layout_marginTop="5dp"/>
+ -->    </RelativeLayout>
+       	
+    <RelativeLayout android:id="@+id/device2_layout" style="@style/antiloss_device_style">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#ff0000ff" android:id="@+id/device2_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="device 2" android:layout_alignParentLeft="true" android:layout_marginLeft="10dp" android:layout_centerVertical="true" />
+    	<CheckBox android:id="@+id/device2_switch" android:button="@drawable/device_checkbox_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="10dp"/>
+        <ImageView android:layout_toLeftOf="@+id/device2_switch" android:id="@+id/device2_del" style="@style/del_antiloss_device_style"/>
+<!--         <LinearLayout android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/grey" android:layout_below="@+id/device2_switch" android:layout_marginTop="5dp"/>
+  -->   </RelativeLayout>
+    
+   	<RelativeLayout android:id="@+id/device3_layout" style="@style/antiloss_device_style">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#ff0000ff" android:id="@+id/device3_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="device 3" android:layout_alignParentLeft="true" android:layout_marginLeft="10dp" android:layout_centerVertical="true" />
+    	<CheckBox android:id="@+id/device3_switch" android:button="@drawable/device_checkbox_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="10dp"/>
+	 	<ImageView android:layout_toLeftOf="@+id/device3_switch" android:id="@+id/device3_del" style="@style/del_antiloss_device_style"/>
+    	
+    	<!--       <LinearLayout android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/grey" android:layout_below="@+id/device3_switch" android:layout_marginTop="5dp"/>
+  -->   </RelativeLayout>
+    
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+		<ListView android:id="@+id/devicefraglist" 
+		    android:descendantFocusability="blocksDescendants"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" 
+		    android:listSelector="@android:color/transparent" 
+		    android:divider="#ff000000" 
+		    android:dividerHeight="1.0px" />
+	    	
+		<ProgressBar android:id="@+id/progress" 
+		    android:layout_width="34.0dip" 
+		    android:layout_height="34.0dip"
+		    android:visibility="invisible"
+		    android:layout_centerInParent="true"
+		    android:indeterminateOnly="true" 
+		    android:indeterminateDrawable="@drawable/loading" 
+		    android:indeterminateBehavior="repeat" 
+		    android:layout_centerHorizontal="true" 
+		    android:layout_centerVertical="true" />
+
+	</RelativeLayout>
+
+</LinearLayout>

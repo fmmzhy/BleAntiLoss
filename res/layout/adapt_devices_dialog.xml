@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/all_background"
+    android:orientation="vertical" >
+    
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_title_background"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/device_name_myble"/>
+	<EditText 
+	    android:layout_marginTop="10dp"
+	    android:id="@+id/dfadapt_device_dlg_et"
+	    android:layout_width="200dp"
+	    android:layout_height="match_parent"
+	    android:layout_gravity="center"
+	    android:text=""/>
+	
+	<LinearLayout android:orientation="horizontal"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginBottom="5dp"
+	    android:gravity="center"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+		<Button 
+	    android:id="@+id/dfAdapterAntiLoss_btOK"
+		style="@style/button_roundrect"
+		android:layout_weight="1"
+	    android:text="@string/dlg_btOK"
+	    />
+	
+		<Button 
+	    android:id="@+id/dfAdapterAntiLoss_btCancel"
+	    style="@style/button_roundrect"
+	    android:layout_weight="1"
+	    android:text="@string/dlg_btCancel"
+	    />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">亦薄</string>
+    <string name="home_rb">设备</string>
+    <string name="plan_rb">查找</string>
+    <string name="setting_rb">设置</string>
+    <string name="help_rb">帮助</string>
+    <string name="home_title01">我的防丢器</string>
+    <string name="home_title02">信号强度</string>
+    <string name="home_title03">防丢设置</string>
+    <string name="home_title04">操作说明</string>
+    <string name="setting_textName">设备名称</string>
+    <string name="setting_ring">铃声设置</string>
+    <string name="setting_sound">警报声音</string>
+    <string name="setting_alert">警报1</string>
+    <string name="setting_warn">警报2</string>
+    <string name="setting_police">信号警报</string>
+    <string name="setting_air">鸣响警报</string>
+    <string name="setting_distance">警报距离</string>
+    <string name="setting_close">近</string>
+    <string name="setting_middle">中</string>
+    <string name="setting_far">远</string>
+    <string name="setting_time">推送信号</string>
+    <string name="setting_check">检查更新</string>
+    <string name="setting_version">版本信息</string>
+    <string name="signal_name">设备名称</string>
+    <string name="warnning">警告！</string>
+    <string name="sdk_version">您的系统版本过低此应用支持Android 4.3以上系统</string>
+    <string name="ble_support">此设备不支持BLE</string>
+    <string name="exit">再按一次退出程序</string>
+    <string name="connect_first">请先连接和选中设备，才能改变其状态</string>
+    <string name="save">保存</string>
+    <string name="cancle">取消</string>
+    <string name="set_title">修改设备名称</string>
+    <string name="check_version">检查更新</string>
+    <string name="check_message">已经为最新版本！</string>
+    <string name="commit">确定</string>
+    <string name="serch_start">启动寻找</string>
+    <string name="serch_stop">停止寻找</string>
+    <string name="device_name">设备名称</string>
+    <string name="device_time">设备在规定时间内没有连接，请重新连接！</string>
+    <string name="device_close">附近没有发现设备，请打开设备！</string>
+    <string name="device_connect_one">您的 %1$s 已连接！！！</string>
+    <string name="device_disconnect_one">您的 %1$s 已断开连接！！！</string>
+    <string name="device_lost_one">您的 %1$s 已丢失！！！</string>
+    <string name="device_search_one">您的 %1$s 正在寻找手机！！！</string>
+    <string name="device_distance">防丢器与你的距离：</string>
+    <string name="notiforcation">触摸即可了解详情或停止应用</string>
+    
+    
+    <string name="device_name_myble">防丢设备</string>
+    <string name="device_unknown">未知</string>
+    
+    <string name="dlg_btOK">是</string>
+    <string name="dlg_btCancel">否</string>
+    
+        <string name="setting_shake">震动设置</string>
+    <string name="alarm_time">警报时间</string>
+    <string name="time_unit">(单位:秒)</string>
+    <string name="device_info">防丢器信息</string>
+    
+    <string name="antiloss_service_isrunnig">防丢服务正在运行 !</string>
+    
+    <string name="location_deviceloss_time_value">暂无</string>
+    <string name="location_deviceloss_time">设备丢失时间</string>
+    
+    <string name="longitude">经度</string>
+	<string name="latitude">纬度</string>
+	<string name="gotolocation">定位</string>
+	
+	<string name="bonding">绑定</string>
+	
+	<string name="dlg_btOK_sure">确定</string>
+	
+	<string name="setting_about">关于</string>
+	
+	<string name="device_not_ble">当前设备不支持BLE功能 !</string>
+	<string name="antiloss_service_notrunnig">防丢服务未开启，请打开设备扫描开关!</string>
+  
+	<string name="view_lost_location_string">查看丢失位置</string>
+	<string name="if_exit_string">您确定要退出吗?</string>
+	<string name="bg_running">后台远行</string>
+	<string name="exit_string">退出</string>
+	
+	<string name="no_set_device">没有设置防丢设备 !</string>
+	
+	<string name="get_it_string">知道了</string>
+	<string name="record_detail">详细</string>
+	<string name="loss_details">丢失记录</string>
+	<string name="no_network">没有连接网络 !</string>
+	<string name="loss_record_str">丢失记录</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+        <item
+        android:id="@+id/location_record"
+        android:icon="@android:drawable/btn_star"
+        android:title="@string/loss_record_str"
+        android:showAsAction="always"/>
+    
+
+</menu>
